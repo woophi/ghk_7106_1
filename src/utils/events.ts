@@ -9,6 +9,7 @@ declare global {
 
 type Payload = {
   sum: number;
+  product_type: 'Вклад' | 'ПДС';
 };
 
 export const sendDataToGA = async (payload: Payload) => {
